@@ -3,122 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Vista Repo - Woofzy</title>
+    <title>Vista Apartments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        header {
+            background-image: url('header-bg.jpg');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3, p {
+            color: #333;
+        }
+        .amenities, .pricing { 
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <h1>Добредојдовте во Vista Repo</h1>
-        <p>Вашиот дом во утрешнината!</p>
+        <h1>Vista Apartments</h1>
     </header>
-
-    <!-- Building Information Section -->
-    <section id="building-info">
-        <h2>Информации за зградата</h2>
-        <div class="info-grid">
-            <div class="grid-item">Локација: Наша улица 5, Скопје</div>
-            <div class="grid-item">Година на изградба: 2025</div>
-            <div class="grid-item">Број на спратови: 6</div>
-            <div class="grid-item">Тип на зграда: Стамбена</div>
-        </div>
-    </section>
-
-    <!-- Amenities Section -->
-    <section id="amenities">
-        <h2>Услуги</h2>
-        <ul>
-            <li>Бесплатен Wi-Fi</li>
-            <li>Паркинг</li>
-            <li>Гимназија</li>
-            <li>Водоснабдување 24/7</li>
-            <li>Лифт</li>
-            <li>Возбудливи пабови</li>
-            <li>Безбедност</li>
-            <li>Зелен парк</li>
-        </ul>
-    </section>
-
-    <!-- Apartment Information Section -->
-    <section id="apartments">
-        <h2>Апартмани</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Спрат</th>
-                    <th>Тип на стан</th>
-                    <th>Слика</th>
-                    <th>Цена</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Iterate through floors and show apartments -->
-                <tr>
-                    <td>1</td>
-                    <td>Студио</td>
-                    <td><img src="images/studio1.jpg" alt="Студио1"></td>
-                    <td>35,000€</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Еднособен</td>
-                    <td><img src="images/onebed1.jpg" alt="Еднособен1"></td>
-                    <td>45,000€</td>
-                </tr>
-                <!-- Additional floors and apartments would go here -->
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing">
-        <h2>Цени</h2>
-        <div class="pricing-cards">
-            <div class="card">
-                <h3>Студио</h3>
-                <p>35,000€</p>
+    <div class="container">
+        <section>
+            <h2>Опожарување Информации</h2>
+            <p>Информации за зграда: Добредојдовте во Vista Apartments, луксузен комплекс со 6 катови.</p>
+        </section>
+        <section>
+            <h2>Удобности</h2>
+            <div class="amenities">
+                <div class="card">
+                    <h3>Слободна Капацирана Камин</h3>
+                    <p>Компоненти за повисоки стандардни секции.</p>
+                </div>
+                <div class="card">
+                    <h3>Паркинг Место</h3>
+                    <p>За секој стан, обезбедени паркинг места.</p>
+                </div>
+                <div class="card">
+                    <h3>Басен</h3>
+                    <p>Опремени со елегантни базени.</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Еднособен Стан</h3>
-                <p>45,000€</p>
+        </section>
+        <section>
+            <h2>Цени</h2>
+            <div class="pricing">
+                <div class="card">
+                    <h3>Стан 1</h3>
+                    <p>Цена: $200,000</p>
+                </div>
+                <div class="card">
+                    <h3>Стан 2</h3>
+                    <p>Цена: $250,000</p>
+                </div>
+                <div class="card">
+                    <h3>Стан 3</h3>
+                    <p>Цена: $300,000</p>
+                </div>
             </div>
-            <!-- More price cards can go here -->
-        </div>
-    </section>
-
-    <!-- Location Section -->
-    <section id="location">
-        <h2>Локација</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <!-- Virtual Tour and Gallery Section -->
-    <section id="gallery">
-        <h2>Виртуелна тура</h2>
-        <div class="gallery-images">
-            <img src="images/apartment1.jpg" alt="Апартман1">
-            <img src="images/apartment2.jpg" alt="Апартман2">
-            <img src="images/apartment3.jpg" alt="Апартман3">
-            <img src="images/apartment4.jpg" alt="Апартман4">
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section id="contact">
-        <h2>Контактирајте не</h2>
-        <form>
-            <label for="name">Име:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Е-маил:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Порака:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Испрати</button>
-        </form>
-        <p>Email: contact@vistarpo.mk</p>
-        <p>Телефон: +389 2 123 456</p>
-    </section>
-
-    <script src="scripts.js"></script>
+        </section>
+        <section>
+            <h2>Локација</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18..."
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </section>
+        <section>
+            <h2>Контакт Формуляр</h2>
+            <form>
+                <label for="name">Име:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Е-пошта:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <input type="submit" value="Прати">
+            </form>
+        </section>
+        <section>
+            <h2>Галерија</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Apartment Image 1">
+                <img src="image2.jpg" alt="Apartment Image 2">
+                <img src="image3.jpg" alt="Apartment Image 3">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 Vista Apartments. Сите права задржани.</p>
+    </footer>
 </body>
 </html>
