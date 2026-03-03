@@ -1,241 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vista Residence - Skopje</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f6f8;
-    color: #333;
-}
-
-header {
-    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-header p {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-h2 {
-    margin-top: 0;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    font-size: 14px;
-}
-
-th {
-    background-color: #f0f0f0;
-}
-
-.available {
-    color: green;
-    font-weight: bold;
-}
-
-.reserved {
-    color: orange;
-    font-weight: bold;
-}
-
-.sold {
-    color: red;
-    font-weight: bold;
-}
-
-.floor-plan {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 8px;
-}
-
-.footer {
-    text-align: center;
-    padding: 30px 20px;
-    background: #222;
-    color: white;
-    margin-top: 40px;
-}
-
-@media(max-width: 768px) {
-    header {
-        padding: 50px 15px;
-    }
-
-    header h1 {
-        font-size: 24px;
-    }
-
-    th, td {
-        font-size: 12px;
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вашиот нов дом</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<header>
-    <h1>Vista Residence</h1>
-    <p>Modern Living in Skopje</p>
-</header>
-
-<div class="container">
-
-<div class="card">
-    <h2>Building Information</h2>
-    <p><strong>Location:</strong> Karpoš 4, Skopje</p>
-    <p><strong>Investor:</strong> Urban Living DOO</p>
-    <p><strong>Total Floors:</strong> 6</p>
-    <p><strong>Total Apartments:</strong> 18</p>
-    <p><strong>Completion Date:</strong> December 2026</p>
-    <p><strong>Heating:</strong> Central</p>
-    <p><strong>Parking:</strong> Underground Garage</p>
-    <p><strong>Available Apartments:</strong> 9</p>
-</div>
-
-<!-- FLOOR TEMPLATE START -->
-
-<div class="card">
-    <h2>Floor 1 (3 Apartments)</h2>
-
-    <table>
-        <tr>
-            <th>Apartment</th>
-            <th>Size (m²)</th>
-            <th>Rooms</th>
-            <th>Balcony</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>1.1</td>
-            <td>52</td>
-            <td>2</td>
-            <td>Yes</td>
-            <td class="available">Available</td>
-        </tr>
-        <tr>
-            <td>1.2</td>
-            <td>68</td>
-            <td>3</td>
-            <td>Yes</td>
-            <td class="reserved">Reserved</td>
-        </tr>
-        <tr>
-            <td>1.3</td>
-            <td>74</td>
-            <td>3</td>
-            <td>No</td>
-            <td class="sold">Sold</td>
-        </tr>
-    </table>
-
-    <img class="floor-plan" src="https://plus.unsplash.com/premium_photo-1663126298656-33616be83c32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Floor Plan">
-</div>
-
-<div class="card">
-    <h2>Floor 2 (3 Apartments)</h2>
-
-    <table>
-        <tr>
-            <th>Apartment</th>
-            <th>Size (m²)</th>
-            <th>Rooms</th>
-            <th>Balcony</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>2.1</td>
-            <td>55</td>
-            <td>2</td>
-            <td>Yes</td>
-            <td class="available">Available</td>
-        </tr>
-        <tr>
-            <td>2.2</td>
-            <td>70</td>
-            <td>3</td>
-            <td>Yes</td>
-            <td class="available">Available</td>
-        </tr>
-        <tr>
-            <td>2.3</td>
-            <td>80</td>
-            <td>4</td>
-            <td>Yes</td>
-            <td class="sold">Sold</td>
-        </tr>
-    </table>
-
-    <img class="floor-plan" src="https://images.unsplash.com/photo-1695381537936-75410f457e12?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Floor Plan">
-</div>
-
-<!-- Duplicate and adjust for floors 3–6 -->
-<!-- You can copy this card block and just rename numbers -->
-
-<div class="card">
-    <h2>Floor 3 (3 Apartments)</h2>
-    <p>Информации за останато..</p>
-</div>
-
-<div class="card">
-    <h2>Floor 4 (3 Apartments)</h2>
-    <p>Информации за останато..</p>
-</div>
-
-<div class="card">
-    <h2>Floor 5 (3 Apartments)</h2>
-    <p>Информации за останато..</p>
-</div>
-
-<div class="card">
-    <h2>Floor 6 (3 Apartments)</h2>
-    <p>Информации за останато..</p>
-</div>
-
-</div>
-
-<div class="footer">
-    <h3>Contact</h3>
-    <p>Phone: +389 70 123 456</p>
-    <p>Email: info@vistaresidence.mk</p>
-</div>
-
+    <header>
+        <h1>Информации за зградата</h1>
+        <p>Оваа зграда нуди современи апартмани со врвни амени.</p>
+    </header>
+    <section id="amenities">
+        <h2>Аменитети</h2>
+        <ul>
+            <li>Бесплатен WiFi</li>
+            <li>Пливачки базен</li>
+            <li>Дали внимавате на вашата безбедност?</li>
+        </ul>
+    </section>
+    <section id="floors">
+        <h2>Катови 1-6</h2>
+        <p>На секој кат имаме различни стилски апартмани.</p>
+    </section>
+    <section id="pricing">
+        <h2>Ценовник</h2>
+        <p>Цените започнуваат од 500 евра месечно.</p>
+    </section>
+    <section id="location">
+        <h2>Локација</h2>
+        <p>Зградата е сместена на идеална локација во центарот на градот.</p>
+    </section>
+    <section id="virtual-tour">
+        <h2>Виртуелна тура</h2>
+        <p>Погледнете го нашиот виртуелен тур со видеа и фотовистински слики.</p>
+    </section>
+    <section id="contact">
+        <h2>Контакт форма</h2>
+        <p>Контактирајте не за повеќе информации.</p>
+    </section>
+    <footer>
+        <p>© 2026 Woofzy. Сите права задржани.</p>
+    </footer>
 </body>
 </html>
